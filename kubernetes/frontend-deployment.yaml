@@ -22,7 +22,7 @@ spec:
         image: ghcr.io/idrisjamall/frontend:v1
         imagePullPolicy: Always
         env:
-          - name: API_URL
+          - name: BACKEND_URL
             value: "http://backend-service:80"
         ports:
         - containerPort: 80
