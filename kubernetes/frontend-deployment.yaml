@@ -22,8 +22,6 @@ spec:
         image: ghcr.io/idrisjamall/frontend:v1
         imagePullPolicy: Always
         env:
-          - name: BACKEND_URL
-            value: "http://backend-service:80"
           - name: API_URL
             value: "https://jamal-kubernetes.infra-x.cloud"  
        
