@@ -19,7 +19,7 @@ spec:
         - name: ghcr-pull-secret
       containers:
       - name: backend
-        image: ghcr.io/idrisjamall/devops-idris/backend:b7722cd78b7c389ce84a02f83c36948ff4657631
+        image: ghcr.io/idrisjamall/devops-idris/backend:latest
         imagePullPolicy: Always
         env: 
           - name: MONGODB_URI
