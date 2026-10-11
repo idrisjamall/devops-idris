@@ -19,7 +19,8 @@ spec:
         - name: ghcr-pull-secret
       containers:
       - name: frontend
-        image: ghcr.io/idrisjamall/frontend:v1
+        image: ghcr.io/idrisjamall/devops-idris/frontend:b17d9b545b424cd7e4096e4b42dbd41660daf503
+
         imagePullPolicy: Always
         env:
           - name: API_URL
