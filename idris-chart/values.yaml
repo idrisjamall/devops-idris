@@ -10,6 +10,6 @@ imagepullsecrets: ghcr-pull-secret
 frontend:
   replicas: 1
   image:
-    repository: ghcr.io/idrisjamall/frontend
-    tag: v1
+    repository: ghcr.io/idrisjamall/devops-idris/frontend
+    tag: latest
  
