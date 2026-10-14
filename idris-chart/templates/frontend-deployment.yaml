@@ -16,7 +16,7 @@ spec:
         app: frontend
     spec:
       imagePullSecrets:
-        - name: {{ .Values.imagepullsecrets }}
+        - name: ghcr-pull-secret
       containers:
       - name: frontend
         image: {{ .Values.frontend.image.repository }}:{{ .Values.frontend.image.tag }}
