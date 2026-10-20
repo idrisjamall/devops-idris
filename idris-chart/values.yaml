@@ -3,7 +3,7 @@ backend:
   replicas: 1
   image:
     repository: ghcr.io/idrisjamall/devops-idris/backend
-    tag: latest
+    tag: v1
     
 imagepullsecrets: ghcr-pull-secret
 
@@ -11,5 +11,5 @@ frontend:
   replicas: 1
   image:
     repository: ghcr.io/idrisjamall/devops-idris/frontend
-    tag: latest
+    tag: v1
  
