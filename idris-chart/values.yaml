@@ -3,7 +3,7 @@ backend:
   replicas: 1
   image:
     repository: ghcr.io/idrisjamall/devops-idris/backend
-    tag: v1
+    tag: latest
     
 
 
