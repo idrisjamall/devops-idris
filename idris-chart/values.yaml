@@ -12,4 +12,24 @@ frontend:
   image:
     repository: ghcr.io/idrisjamall/devops-idris/frontend
     tag: latest
+
+grafana:
+  enabled: true
  
+  ingress:
+  enabled: true
+  ingressClassName: nginx
+  
+  path: /
+  pathType: Prefix
+
+  hosts:
+    - jamal-grafana.infra-x.cloud
+ 
+
+
+  tls:
+   - secretName: idris-grafana-tls
+     hosts:
+       - jamal-grafana.infra-x.cloud
+  

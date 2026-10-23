@@ -1,0 +1,16 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: idris-grafana-tls
+  namespace: idris
+spec:
+  dnsNames:
+    - jamal-grafana.infra-x.cloud
+  issuerRef:
+    group: cert-manager.io
+    kind: ClusterIssuer
+    name: praxis-form-letsencrypt-prod
+  secretName: idris-grafana-tls
+  usages:
+  - digital signature
+  - key encipherment
