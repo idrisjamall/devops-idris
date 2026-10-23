@@ -17,19 +17,19 @@ grafana:
   enabled: true
  
   ingress:
-  enabled: true
-  ingressClassName: nginx
+    enabled: true
+    ingressClassName: nginx
+    
+    path: /
+    pathType: Prefix
+
+    hosts:
+      - jamal-grafana.infra-x.cloud
   
-  path: /
-  pathType: Prefix
-
-  hosts:
-    - jamal-grafana.infra-x.cloud
- 
 
 
-  tls:
-   - secretName: idris-grafana-tls
-     hosts:
-       - jamal-grafana.infra-x.cloud
+    tls:
+    - secretName: idris-grafana-tls
+      hosts:
+        - jamal-grafana.infra-x.cloud
   

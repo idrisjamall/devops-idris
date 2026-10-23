@@ -34,8 +34,10 @@ spec:
         path: /actuator
         pathType: Prefix
   tls:
-  - hosts:
-    - jamal-kubernetes.infra-x.cloud
-    secretName: idris-tls
+    - secretName: idris-tls
+      hosts:
+        - jamal-kubernetes.infra-x.cloud
+        
+  
 
   
