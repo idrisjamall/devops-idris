@@ -5,7 +5,7 @@ backend:
     repository: ghcr.io/idrisjamall/devops-idris/backend
     tag: latest
     
-
+imagepullsecrets: ghcr-pull-secret
 
 frontend:
   replicas: 1
