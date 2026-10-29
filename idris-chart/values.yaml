@@ -1,6 +1,6 @@
 namespace: idris
 backend:
-  replicas: 1
+  replicas: 2
   image:
     repository: ghcr.io/idrisjamall/devops-idris/backend
     tag: latest
