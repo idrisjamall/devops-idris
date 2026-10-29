@@ -206,7 +206,7 @@ jobs:
           echo "${{ secrets.KUBECONFIG_BASE64 }}" | base64 --d > $HOME/.kube/config
           chmod 600 $HOME/.kube/config
       - name: deploy with helm
-        working-directory: ./idris-charts
+        working-directory: ./idris-chart
         run: |
           helm upgrade --install idris-release . --create-namespace -n "${NAMESPACE}" \
             --set backend.image.repository=ghcr.io/${{ env.REPO_LC }}/backend \
