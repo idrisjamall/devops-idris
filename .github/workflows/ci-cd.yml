@@ -208,7 +208,7 @@ jobs:
       - name: deploy with helm
         working-directory: ./idris-charts
         run: |
-          helm upgrade --install idris-release --create-namespace -n "${{NAMESPACE}}" \
+          helm upgrade --install idris-release --create-namespace -n "${NAMESPACE}" \
             --set backend.image.repository=ghcr.io/${{ env.REPO_LC }}/backend \
             --set frontend.image.repository=ghcr.io/${{ env.REPO_LC }}/frontend 
             
